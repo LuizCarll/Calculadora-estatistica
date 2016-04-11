@@ -6,7 +6,7 @@ import android.widget.*;
 public class View_Pmi extends View
 {
 	LinearLayout llRoot;
-	TextView textViewCell;
+	public TextView textViewCell;
 	public View_Pmi(Activity context,LinearLayout ll){
 		super(context);
 		

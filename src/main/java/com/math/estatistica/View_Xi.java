@@ -17,11 +17,12 @@ public class View_Xi extends View
 
 	private EditText editXi;
     public LinearLayout llRoot;
+	public LinearLayout llFac;
 	public TextView tvXI;
 	private TextView somatorio;
 	public static int Somatorio = 0;
 	private List<View_Xi> lista;
-
+    public View_Pmi viewFac;
 	public View_Xi(Activity context, LinearLayout ll,List list){
 		super(context);
 		lista = list;
@@ -34,7 +35,9 @@ llRoot.addView(view,llRoot.getChildCount()-1);
     somatorio = (TextView) llRoot.findViewById(R.id.textviewSomatorioFi);
 	editXi = (EditText)(((LinearLayout)llRoot.getChildAt(ll.getChildCount()-2))).findViewById(R.id.etXi);
 	tvXI = (TextView) (((LinearLayout)llRoot.getChildAt(ll.getChildCount()-2))).findViewById(R.id.tvXI);
-}
+	llFac = (LinearLayout) context.findViewById(R.id.linearLayoutFac);
+     viewFac = new View_Pmi(context,llFac);
+	}
 	else{
 		llRoot.addView(view);
 		editXi = (EditText)(((LinearLayout)llRoot.getChildAt(ll.getChildCount()-1))).findViewById(R.id.etXi);
@@ -82,7 +85,10 @@ llRoot.addView(view,llRoot.getChildCount()-1);
 						tvXI.setText(editXi.getText());
 						tvXI.setVisibility(View.VISIBLE);
 						editXi.setVisibility(View.GONE);
-					    if(llRoot.getId() != R.id.tvXI) Somatorio();
+					    if(llRoot.getId() != R.id.tvXI){ 
+						Somatorio();
+						calcFac();
+						}
 					}
 				}
 
@@ -102,6 +108,17 @@ llRoot.addView(view,llRoot.getChildCount()-1);
 	}
 	public void remover(int position){
 		llRoot.removeViewAt(position+1);
+		if(llRoot.getId() != R.id.tvXI)llFac.removeViewAt(position+1);
+	}
+	private void calcFac(){
+		try{
+		int fiac = 0;
+		for(int x = 0; x < lista.size();x++){
+			int res = Integer.parseInt(lista.get(x).tvXI.getText().toString());
+		    res += fiac;
+			lista.get(x).viewFac.textViewCell.setText(res+"");
+			fiac = res;
+			}}catch(Exception e){}
 	}
 		
 }
