@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+    
+    <TextView
+    					android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+    					android:text="Calculadora Estatistica"
+						android:background="#4A0073"
+						android:textColor="#ffffff"
+    					android:gravity="center"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#ffffee"
+		android:orientation="vertical">
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Tipos de Conjuntos de Dados: "/>
+			<Spinner
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/SpinnerConjuntosDados"/>
+		</LinearLayout>
+		
+		<RadioGroup
+			android:id="@+id/radioGroup"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			 android:orientation="horizontal">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Tipo de Dados: "/>
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:id="@+id/radioButtonXi"
+			android:text="Xi"
+			/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="false"
+				android:id="@+id/radioButtonClasse"
+				android:text="Classe"/>
+	  </RadioGroup>
+	  	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:id="@+id/layout_calc">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:id="@+id/linearLayoutSelect">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Selecionar:"
+						android:gravity="center"/>
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Somatorio:"
+						android:gravity="center"/>
+				</LinearLayout>
+				
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:id="@+id/linearLayoutXi">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:text="Xi"
+					android:gravity="center"/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone"
+					android:id="@+id/linearLayoutClasse">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Classe"
+						android:gravity="center"/>
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:id="@+id/linearLayoutFi">
+					<TextView
+						android:gravity="center"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Fi"/>
+						
+						 <TextView
+						android:gravity="center"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:id="@+id/textviewSomatorioFi"
+		 android:text="total" 	/>
+				</LinearLayout>
+			</LinearLayout>	
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="ADD_Dado"
+				android:text="ADD"/>
+				
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:onClick="Remover_Dado"
+					android:text="Remover"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
