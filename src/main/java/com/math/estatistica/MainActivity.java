@@ -17,6 +17,7 @@ public class MainActivity extends Activity
 	LinearLayout ll2;
 	LinearLayout ll3;
     LinearLayout llClasse;
+	LinearLayout llpmi;
 	EditText editXi;
 	TextView tvXI;
 	EditText editQtdXi;
@@ -38,7 +39,7 @@ public class MainActivity extends Activity
 		ll2 = (LinearLayout) findViewById(R.id.linearLayoutFi);
 		ll3 = (LinearLayout) findViewById(R.id.linearLayoutSelect);
 		llClasse = (LinearLayout) findViewById(R.id.linearLayoutClasse);
-		
+		llpmi = (LinearLayout) findViewById(R.id.linearLayoutPmi);
 		rdoXi = (RadioButton) findViewById(R.id.radioButtonXi);
 		rdoClasse = (RadioButton) findViewById(R.id.radioButtonClasse);
 		rdoXi.setOnCheckedChangeListener(new OnCheckedChangeListener(){
@@ -49,6 +50,7 @@ public class MainActivity extends Activity
 					if(p2){
 					ll.setVisibility(View.VISIBLE);
 					llClasse.setVisibility(View.GONE);
+					llpmi.setVisibility(View.GONE);
 					}
 				}
 			});
@@ -60,6 +62,7 @@ public class MainActivity extends Activity
 					// TODO: Implement this method
 					if(p2){ll.setVisibility(View.GONE);
 					llClasse.setVisibility(View.VISIBLE);
+						llpmi.setVisibility(View.VISIBLE);
 					}
 				}
 			});

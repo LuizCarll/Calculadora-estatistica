@@ -104,7 +104,18 @@
 						android:text="Classe"
 						android:gravity="center"/>
 				</LinearLayout>
-				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone"
+					android:id="@+id/linearLayoutPmi">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:text="Pmi"
+						android:gravity="center"/>
+				</LinearLayout>
 				<LinearLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"

@@ -14,30 +14,33 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int CheckBoxSelect=0x7f06000f;
-        public static final int SpinnerConjuntosDados=0x7f060004;
-        public static final int editTextClasseLi=0x7f060001;
-        public static final int editTextClasseLs=0x7f060003;
-        public static final int etXi=0x7f060011;
-        public static final int layout_calc=0x7f060008;
-        public static final int linearLayoutClasse=0x7f06000b;
-        public static final int linearLayoutFi=0x7f06000c;
-        public static final int linearLayoutSelect=0x7f060009;
-        public static final int linearLayoutXi=0x7f06000a;
-        public static final int radioButtonClasse=0x7f060007;
-        public static final int radioButtonXi=0x7f060006;
-        public static final int radioGroup=0x7f060005;
-        public static final int textViewClasseLi=0x7f060000;
-        public static final int textViewClasseLs=0x7f060002;
-        public static final int textViewtSelect=0x7f06000e;
-        public static final int textviewSomatorioFi=0x7f06000d;
-        public static final int tvXI=0x7f060010;
+        public static final int CheckBoxSelect=0x7f060011;
+        public static final int SpinnerConjuntosDados=0x7f060005;
+        public static final int editTextClasseLi=0x7f060002;
+        public static final int editTextClasseLs=0x7f060004;
+        public static final int etXi=0x7f060013;
+        public static final int layout_calc=0x7f060009;
+        public static final int linearLayoutClasse=0x7f06000c;
+        public static final int linearLayoutFi=0x7f06000e;
+        public static final int linearLayoutPmi=0x7f06000d;
+        public static final int linearLayoutSelect=0x7f06000a;
+        public static final int linearLayoutXi=0x7f06000b;
+        public static final int radioButtonClasse=0x7f060008;
+        public static final int radioButtonXi=0x7f060007;
+        public static final int radioGroup=0x7f060006;
+        public static final int textViewCell=0x7f060000;
+        public static final int textViewClasseLi=0x7f060001;
+        public static final int textViewClasseLs=0x7f060003;
+        public static final int textViewtSelect=0x7f060010;
+        public static final int textviewSomatorioFi=0x7f06000f;
+        public static final int tvXI=0x7f060012;
     }
     public static final class layout {
-        public static final int cell_classe=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int view_checkbox_select=0x7f030002;
-        public static final int view_xi=0x7f030003;
+        public static final int cell=0x7f030000;
+        public static final int cell_classe=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int view_checkbox_select=0x7f030003;
+        public static final int view_xi=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
