@@ -12,6 +12,7 @@ import android.opengl.*;
 import android.transition.*;
 public class MainActivity extends Activity 
 {
+	//alterei
 	private final String[] tipoConjuntosdeDados = {"Amostra","Populacao"};
 	LinearLayout ll;
 	LinearLayout ll2;
